@@ -1,26 +1,26 @@
 class Rocky < Formula
   desc "CLI time tracking tool"
   homepage "https://github.com/argylebits/Rocky"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/argylebits/Rocky/releases/download/v#{version}/rocky-macos-arm64.tar.gz"
-      sha256 "961c243e2412619db41892a93da815c33cc849093959c418c06ead80ceeab713"
+      sha256 "c1d67a1b9cf44b4825f355b3b433191807fdf4a6d49069a8451bb6be8b115c06"
     elsif Hardware::CPU.intel?
       url "https://github.com/argylebits/Rocky/releases/download/v#{version}/rocky-macos-x86_64.tar.gz"
-      sha256 "caf18c158d4dd804580673345095fed94e82bba745976ef6d38358331a563765"
+      sha256 "80534b57742187dbf876870262baecc6ce12c0794b9dc06d1ee34f4dfd7acb32"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/argylebits/Rocky/releases/download/v#{version}/rocky-linux-arm64.tar.gz"
-      sha256 "0e341a02e503e8b0c297a10225abb38d3fbee7ca17b52b2a498c4eb2220f347d"
+      sha256 "fd457145170f18e671cea41b9da2b8ba89c556f02f7bc169777cd67e6bde124b"
     elsif Hardware::CPU.intel?
       url "https://github.com/argylebits/Rocky/releases/download/v#{version}/rocky-linux-x86_64.tar.gz"
-      sha256 "b178e787af4273d7c800eceecf61b336cc38af23fa896b279268bfc6cb07a38e"
+      sha256 "12278df15ec869d3c0af49625f494881ca628e9d76207aad34a7f4046367fc06"
     end
   end
 
