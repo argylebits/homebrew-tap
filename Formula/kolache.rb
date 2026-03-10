@@ -1,16 +1,16 @@
 class Kolache < Formula
   desc "Project scaffolding for Swift developers"
   homepage "https://github.com/argylebits/Kolache"
-  version "0.1.1"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/argylebits/Kolache/releases/download/v#{version}/kolache-macos-arm64.tar.gz"
-      sha256 "0486d6e0a9e10c2f4297503d29eb06a5663fb136028d6754df6c8e335454cdb2"
+      sha256 "c26ef6c0c55d167e36ff197dbee49ed944b0b47f09655a71e05dccfc9a5c5c78"
     elsif Hardware::CPU.intel?
       url "https://github.com/argylebits/Kolache/releases/download/v#{version}/kolache-macos-x86_64.tar.gz"
-      sha256 "cee6dded77e7ab15b0ad72dfd5f5c0bd1e9be21097886e1c6cc49464b2f85e50"
+      sha256 "e46501fb05cc3cd597a6e033c54675e167dd2cfffbffc5656849da18ae0cae12"
     end
   end
 
