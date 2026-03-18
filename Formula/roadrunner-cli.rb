@@ -1,14 +1,14 @@
 class RoadrunnerCli < Formula
   desc "Ephemeral Linux CI runners on macOS"
   homepage "https://github.com/argylebits/RoadrunnerCLI"
-  version "0.1.0"
+  version "0.1.1"
   license "Apache-2.0"
 
   depends_on :macos
   depends_on arch: :arm64
 
   url "https://github.com/argylebits/RoadrunnerCLI/releases/download/v#{version}/roadrunner-macos-arm64.tar.gz"
-  sha256 "29e598305fd37d7fead8972758eeece09bd0600042edd8733a04b3428823864c"
+  sha256 "3d7d8558e825e04759126ba5cef50b4328b039b2be4e7a1d56e3794c57251118"
 
   def install
     bin.install "roadrunner"
