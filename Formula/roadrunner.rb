@@ -8,7 +8,7 @@ class Roadrunner < Formula
   depends_on arch: :arm64
 
   url "https://github.com/argylebits/Roadrunner/releases/download/v#{version}/roadrunner-macos-arm64.tar.gz"
-  sha256 "1a63ef820052db91a56298283e85900c6496d59bf3f996da42991e5cb5129a18"
+  sha256 "29e598305fd37d7fead8972758eeece09bd0600042edd8733a04b3428823864c"
 
   def install
     bin.install "roadrunner"
