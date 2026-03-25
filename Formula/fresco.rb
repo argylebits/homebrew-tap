@@ -1,26 +1,26 @@
 class Fresco < Formula
   desc "AI image generation CLI"
   homepage "https://github.com/argylebits/Fresco"
-  version "0.1.2"
+  version "0.1.3"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/argylebits/Fresco/releases/download/v#{version}/fresco-macos-arm64.tar.gz"
-      sha256 "94f526b9b7ce9200290c32f3dc5a0fb128c9f9d728498845d9181e9ced57add1"
+      sha256 "babfddb256a13237db75396d17659171d5c51c16585c59fd2ac4b6a00b5766eb"
     elsif Hardware::CPU.intel?
       url "https://github.com/argylebits/Fresco/releases/download/v#{version}/fresco-macos-x86_64.tar.gz"
-      sha256 "2bd78d1fafe38a4a6701f67fa51b89dc6f038b77c76f264de1b4c25b43a0df61"
+      sha256 "aa41cb8b236f2c82797be08238c09f49d7bf797d1634cc7976e43e1c1c52b15b"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/argylebits/Fresco/releases/download/v#{version}/fresco-linux-arm64.tar.gz"
-      sha256 "a7be44f0e4eea216400d5b139930e1f78edd4e8a96f3e745e9cc4909ddb813eb"
+      sha256 "0fc52ce4428326e8ec030b08b6859d93209d59fe96705663b923e71ada6d863f"
     elsif Hardware::CPU.intel?
       url "https://github.com/argylebits/Fresco/releases/download/v#{version}/fresco-linux-x86_64.tar.gz"
-      sha256 "87759b8d048520a0f6673363c771c7d6f22eb2064cb21ee82344112c93fc0e84"
+      sha256 "13a6fdc1214f617820c54952babdcc914ea19952eea8135a062333cb2c611e2c"
     end
   end
 
